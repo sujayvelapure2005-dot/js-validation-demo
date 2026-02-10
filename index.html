@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Validation Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>JavaScript Validation Demo</h2>
+
+    <!-- Email -->
+    <div class="box">
+        <label>Email Address</label>
+        <input type="text" id="email" placeholder="example@gmail.com">
+        <button onclick="validateEmail()">Validate Email</button>
+        <p id="emailMsg"></p>
+    </div>
+
+    <!-- Password -->
+    <div class="box">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter password"
+               onkeyup="checkStrength()">
+        <p id="strengthMsg"></p>
+    </div>
+
+    <!-- Cookies -->
+    <div class="box">
+        <button onclick="setCookie()">Set Cookie</button>
+        <button onclick="readCookie()">Read Cookie</button>
+        <p id="cookieMsg"></p>
+    </div>
+
+    <!-- Session -->
+    <div class="box">
+        <button onclick="setSession()">Set Session</button>
+        <button onclick="readSession()">Read Session</button>
+        <p id="sessionMsg"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
